@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="Inscris-toi à The 1v1 Fox Carnival, un événement Super Animal Royale.">
+  <title>The 1v1 Fox Carnival | Inscription</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/registration.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="/fr/" aria-label="Accueil The 1v1 Fox Carnival">FOX <span>CARNIVAL</span></a>
+    <div class="language">
+      <button class="language-toggle" type="button" aria-expanded="false" aria-controls="language-menu">
+        <img src="/assets/language.svg" alt="" width="18" height="18"><span>FR</span>
+      </button>
+      <nav class="language-menu" id="language-menu" hidden aria-label="Langue">
+        <a href="/en/" lang="en">English</a>
+        <a href="/fr/" lang="fr" aria-current="page">Français</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page">
+    <section class="intro">
+      <p class="eyebrow">ÉVÉNEMENT SUPER ANIMAL ROYALE</p>
+      <h1>The 1v1 Fox <span>Carnival</span></h1>
+      <p class="subtitle">Prêt à entrer dans l'arène ? Inscris-toi ci-dessous pour participer.</p>
+    </section>
+    <section class="registration-card" aria-labelledby="form-title">
+      <div class="card-heading">
+        <div><p class="eyebrow">INSCRIPTION JOUEUR</p><h2 id="form-title">Inscription des participants</h2></div>
+        <span class="step">01 / 01</span>
+      </div>
+      <form id="registration-form">
+        <label for="discordUsername">Nom d'utilisateur Discord</label>
+        <input id="discordUsername" name="discordUsername" type="text" placeholder="tonpseudo" maxlength="80" autocomplete="off" required>
+        <label for="sarUsername">Nom d'utilisateur SAR</label>
+        <input id="sarUsername" name="sarUsername" type="text" placeholder="Ton pseudo en jeu" maxlength="40" required>
+        <label for="friendCode">Code ami SAR</label>
+        <input id="friendCode" name="friendCode" type="text" placeholder="Ton code ami" maxlength="40" required>
+        <label for="platform">Plateforme</label>
+        <select id="platform" name="platform" required>
+          <option value="" disabled selected>Choisis ta plateforme</option>
+          <option value="PC">PC</option><option value="PlayStation">PlayStation</option><option value="Xbox">Xbox</option><option value="Nintendo Switch">Nintendo Switch</option>
+        </select>
+        <button class="submit-button" type="submit"><span class="button-label">Envoyer l'inscription</span><span aria-hidden="true">↗</span></button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <p class="privacy-note">Tes informations seront transmises à l'équipe de l'événement.</p>
+      </form>
+    </section>
+    <footer class="page-footer"><span>THE 1V1 FOX CARNIVAL</span><span>SUPER ANIMAL ROYALE</span></footer>
+  </main>
+</body>
+</html>
