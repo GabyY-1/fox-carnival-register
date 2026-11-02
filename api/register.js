@@ -27,12 +27,12 @@ module.exports = async function handler(req, res) {
   const embed = {
     title: "New Participant",
     color: 0x718db5,
-    fields: [
-      { name: "Discord Username :", value: discordUsername, inline: false },
-      { name: "Pseudo SAR :", value: sarUsername, inline: false },
-      { name: "SAR Friend Code :", value: friendCode, inline: false },
-      { name: "Platform :", value: platform, inline: false }
-    ],
+    description: [
+      `**Discord Username :** ${discordUsername}`,
+      `**SAR Username :** ${sarUsername}`,
+      `**SAR Friend Code :** ${friendCode}`,
+      `**Platform :** ${platform}`
+    ].join("\n"),
     footer: { text: "The 1v1 Fox Carnival" }
   };
 
