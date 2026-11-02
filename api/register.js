@@ -28,10 +28,10 @@ module.exports = async function handler(req, res) {
     title: "New Participant",
     color: 0x718db5,
     fields: [
-      { name: "Discord Username :", value: discordUsername, inline: true },
-      { name: "Pseudo SAR :", value: sarUsername, inline: true },
-      { name: "SAR Friend Code :", value: friendCode, inline: true },
-      { name: "Platform :", value: platform, inline: true }
+      { name: "Discord Username :", value: discordUsername, inline: false },
+      { name: "Pseudo SAR :", value: sarUsername, inline: false },
+      { name: "SAR Friend Code :", value: friendCode, inline: false },
+      { name: "Platform :", value: platform, inline: false }
     ],
     footer: { text: "The 1v1 Fox Carnival" }
   };
