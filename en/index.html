@@ -10,7 +10,6 @@
 </head>
 <body>
   <header class="topbar">
-    <a class="wordmark" href="/en/" aria-label="The 1v1 Fox Carnival home">FOX <span>CARNIVAL</span></a>
     <div class="language">
       <button class="language-toggle" type="button" aria-expanded="false" aria-controls="language-menu">
         <img src="/assets/language.svg" alt="" width="18" height="18"><span>EN</span>
@@ -22,16 +21,7 @@
     </div>
   </header>
   <main class="page">
-    <section class="intro">
-      <p class="eyebrow">SUPER ANIMAL ROYALE EVENT</p>
-      <h1>The 1v1 Fox <span>Carnival</span></h1>
-      <p class="subtitle">Ready to enter the arena? Register below to take part.</p>
-    </section>
-    <section class="registration-card" aria-labelledby="form-title">
-      <div class="card-heading">
-        <div><p class="eyebrow">PLAYER ENTRY</p><h2 id="form-title">Participant registration</h2></div>
-        <span class="step">01 / 01</span>
-      </div>
+    <section class="registration-card" aria-label="Participant registration">
       <form id="registration-form">
         <label for="discordUsername">Discord Username</label>
         <input id="discordUsername" name="discordUsername" type="text" placeholder="yourname" maxlength="80" autocomplete="off" required>
@@ -46,10 +36,8 @@
         </select>
         <button class="submit-button" type="submit"><span class="button-label">Submit registration</span><span aria-hidden="true">↗</span></button>
         <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-        <p class="privacy-note">Your registration details will be sent to the event team.</p>
       </form>
     </section>
-    <footer class="page-footer"><span>THE 1V1 FOX CARNIVAL</span><span>SUPER ANIMAL ROYALE</span></footer>
   </main>
 </body>
 </html>
