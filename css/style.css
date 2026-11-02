@@ -161,3 +161,39 @@ select option { color: var(--text); }
 }
 
 .submit-button img { width: 18px; height: 18px; object-fit: contain; }
+
+
+.platform-select {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.platform-select select {
+  margin: 0;
+  padding-right: 42px;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.platform-chevron {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.platform-chevron img {
+  display: block;
+  width: 14px;
+  height: 10px;
+  filter: invert(1);
+}
+.platform-chevron .chevron-up { display: none; }
+.platform-select:focus-within .chevron-down { display: none; }
+.platform-select:focus-within .chevron-up { display: block; }
