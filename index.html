@@ -31,7 +31,8 @@
         <label for="friendCode">SAR Friend Code</label>
         <input id="friendCode" name="friendCode" type="text" placeholder="Your friend code" maxlength="40" required>
         <label for="platform">Platform</label>
-        <select id="platform" name="platform" required>
+        <div class="platform-select">
+          <select id="platform" name="platform" required>
           <option value="" disabled selected>Select your platform</option>
           <option value="PC">PC</option>
           <option value="PlayStation">PlayStation</option>
@@ -39,6 +40,11 @@
           <option value="Nintendo Switch">Nintendo Switch</option>
           <option value="Other">Other</option>
         </select>
+          <span class="platform-chevron" aria-hidden="true">
+            <img class="chevron-up" src="/assets/chevron-up.svg" alt="">
+            <img class="chevron-down" src="/assets/chevron-down.svg" alt="">
+          </span>
+        </div>
         <button class="submit-button" type="submit">
           <span class="button-label">Submit registration</span>
           <img src="/assets/belle-fleche.svg" alt="" aria-hidden="true">
