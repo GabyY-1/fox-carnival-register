@@ -30,11 +30,17 @@
         <label for="friendCode">Code ami SAR</label>
         <input id="friendCode" name="friendCode" type="text" placeholder="Ton code ami" maxlength="40" required>
         <label for="platform">Plateforme</label>
-        <select id="platform" name="platform" required>
+        <div class="platform-select">
+          <select id="platform" name="platform" required>
           <option value="" disabled selected>Choisis ta plateforme</option>
           <option value="PC">PC</option><option value="PlayStation">PlayStation</option><option value="Xbox">Xbox</option><option value="Nintendo Switch">Nintendo Switch</option>
           <option value="Other">Other</option>
         </select>
+          <span class="platform-chevron" aria-hidden="true">
+            <img class="chevron-up" src="/assets/chevron-up.svg" alt="">
+            <img class="chevron-down" src="/assets/chevron-down.svg" alt="">
+          </span>
+        </div>
         <button class="submit-button" type="submit"><span class="button-label">Envoyer l'inscription</span><img src="/assets/belle-fleche.svg" alt="" aria-hidden="true"></button>
         <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
       </form>
