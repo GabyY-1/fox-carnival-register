@@ -159,3 +159,5 @@ select option { color: var(--text); }
   .registration-card { padding: 22px 18px; }
   .topbar { top: 12px; right: 12px; }
 }
+
+.submit-button img { width: 18px; height: 18px; object-fit: contain; }
