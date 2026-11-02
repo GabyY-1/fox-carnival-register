@@ -1,4 +1,4 @@
-const allowedPlatforms = new Set(["PC", "PlayStation", "Xbox", "Nintendo Switch"]);
+const allowedPlatforms = new Set(["PC", "PlayStation", "Xbox", "Nintendo Switch", "Other"]);
 
 function clean(value, maxLength) {
   return typeof value === "string" ? value.trim().slice(0, maxLength) : "";
