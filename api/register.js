@@ -28,11 +28,11 @@ module.exports = async function handler(req, res) {
     title: "New Participant",
     color: 0x718db5,
     description: [
-      `**Discord Username :** ${discordUsername}`,
-      `**SAR Username :** ${sarUsername}`,
-      `**SAR Friend Code :** ${friendCode}`,
-      `**Platform :** ${platform}`
-    ].join("\n"),
+      `**Discord Username :**\n${discordUsername}`,
+      `**SAR Username :**\n${sarUsername}`,
+      `**SAR Friend Code :**\n${friendCode}`,
+      `**Platform :**\n${platform}`
+    ].join("\n\n"),
     footer: { text: "The 1v1 Fox Carnival" }
   };
 
