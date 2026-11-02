@@ -1,0 +1,7 @@
+{
+  "name": "fox-carnival-register",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Registration website for The 1v1 Fox Carnival",
+  "engines": { "node": "22.x" }
+}
