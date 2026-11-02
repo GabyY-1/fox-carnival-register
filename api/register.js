@@ -29,7 +29,7 @@ module.exports = async function handler(req, res) {
     color: 0x718db5,
     fields: [
       { name: "Discord Username :", value: discordUsername, inline: true },
-      { name: "SAR Username :", value: sarUsername, inline: true },
+      { name: "Pseudo SAR :", value: sarUsername, inline: true },
       { name: "SAR Friend Code :", value: friendCode, inline: true },
       { name: "Platform :", value: platform, inline: true }
     ],
